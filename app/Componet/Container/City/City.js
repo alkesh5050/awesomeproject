@@ -1,47 +1,25 @@
-import { Text, TouchableOpacity, View } from 'react-native'
-import React, { Component } from 'react'
+import { View, Text, TouchableOpacity } from 'react-native'
+import React, { useState } from 'react'
 
-export default class City extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            Cityname: 'surat',
-            famas: 'dumas'
-        }
-    }
-    changeCity = () => {
-        console.log("sddssd");
-        this.setState({
-            Cityname: 'goa',
-            famas: 'mall'
-        });
-    };
+export default function City({cn}) {
+    const [CityName,setCityName]=useState('surat');
+    const[CityFamus, setCityFamus]=useState('Dumas');
 
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text>City</Text>
-                <Text>Country name : -{this.props.cn}</Text>
-                <Text>Country code : -{this.props.co}</Text>
-                <Text>Country code : -{this.props.myname}</Text>
-                <Text>City name : -{this.state.Cityname}</Text>
-                <Text>City code : -{this.state.famas}</Text>
-                <TouchableOpacity style={styles.button} onPress={this.changeCity}>
-                    <Text>Press Here city</Text>
-                </TouchableOpacity>
-            </View>
-        )
-    }
+    const handlechangeCity=()=>{
+        setCityName('baroda');
+        setCityFamus('road')
+      }
+
+  return (
+    <View>
+      <Text>City</Text>
+      <Text> City name :{CityName}</Text>
+      <Text> city fumas plase :{CityFamus}</Text>
+      <Text> country Name :{cn}</Text>
+      <TouchableOpacity onPress={handlechangeCity}>
+      <Text>Country chang</Text>
+      </TouchableOpacity>
+
+    </View>
+  )
 }
-const styles = ({
-
-    button: {
-        alignItems: 'center',
-        backgroundColor: 'green',
-        padding: 5,
-        
-    },
-    container:{
-        alignItems: 'center',
-    }
-});

@@ -4,6 +4,8 @@ import Country from './app/Componet/Container/country/Country.js'
 import Countryclass from './app/Componet/Container/countryclass/Countryclass.js'
 import City from './app/Componet/Container/City/City.js'
 import Counter from './app/Componet/Container/Counterclass/Counter.js'
+import Counterf from './app/Componet/Container/Counterclass/Counterf.js'
+import Product from './app/Componet/Container/Product/Product.js'
 
 export default function App() {
   return (
@@ -11,7 +13,8 @@ export default function App() {
   {/* <Country/> */}
    {/* <Countryclass/> */}
    {/* <City/> */}
-  <Counter/>
+  {/* <Counterf/> */}
+  <Product/>
    </>
   )
 }
