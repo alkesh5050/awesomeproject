@@ -16,10 +16,13 @@ export default function City({cn}) {
       <Text> City name :{CityName}</Text>
       <Text> city fumas plase :{CityFamus}</Text>
       <Text> country Name :{cn}</Text>
+  
       <TouchableOpacity onPress={handlechangeCity}>
       <Text>Country chang</Text>
       </TouchableOpacity>
 
     </View>
+    
   )
+  
 }

@@ -251,22 +251,19 @@ export default function Product() {
             {
                 data.map((v) => (
                     <>
-
-
-
                         <Image
                             style={{
                                 width: 100,
                                 height: 100
                             }}
                             source={{
-                                uri: v.image,
+                                uri: v.image
                             }}
                         />
 
+                        <Text>{v.price}</Text>
+                        <Text>{v.title}</Text>
 
-                        <Text>{v.title}</Text>
-                        <Text>{v.title}</Text>
                     </>
                 ))
             }
