@@ -11,7 +11,7 @@ export default function City({cn}) {
       }
 
   return (
-    <View>
+    <View style={{backgroundColor:'black'}}>
       <Text>City</Text>
       <Text> City name :{CityName}</Text>
       <Text> city fumas plase :{CityFamus}</Text>
