@@ -20,6 +20,7 @@ import Animated1 from './app/Container/Button/Animated1';
 import KeyboardAvoidingView1 from './app/Container/Button/KeyboardAvoidingView1';
 import Linking1 from './app/Container/Button/Linking1';
 import PixelRatio1 from './app/Container/Button/PixelRatio1';
+import Netinfo1 from './app/Container/Button/Netinfo1';
 
 
 
@@ -32,7 +33,7 @@ export default function App() {
     //  {/* <DrawerNavigator/> */}
     //  <BottomTabs/>
     //   </NavigationContainer>
-    <PixelRatio1 />
+    <Netinfo1 />
 
   )
 }
