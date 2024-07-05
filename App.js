@@ -21,6 +21,7 @@ import KeyboardAvoidingView1 from './app/Container/Button/KeyboardAvoidingView1'
 import Linking1 from './app/Container/Button/Linking1';
 import PixelRatio1 from './app/Container/Button/PixelRatio1';
 import Netinfo1 from './app/Container/Button/Netinfo1';
+import Counterf from './app/Container/Counterclass/Counterf';
 
 
 
@@ -33,7 +34,8 @@ export default function App() {
     //  {/* <DrawerNavigator/> */}
     //  <BottomTabs/>
     //   </NavigationContainer>
-    <Netinfo1 />
+    // <Netinfo1 />
+    <Counterf />
 
   )
 }

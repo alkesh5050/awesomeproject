@@ -1,34 +1,31 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { increment } from '../../redux/action/counter.action';
 
 export default function Counterf() {
 
-   
-    const [count,setCount]=useState(0);
+  const dispatch = useDispatch(); //3
 
-    handleEnc = () => {
-        if(count<5){
-            setCount(count+1)
+  // 2
+  const handleInc = () => {
+    dispatch(increment());    //4
+  }
 
-        }
-       
-      }
-      handleDec = () => {
-       
-        if(count > 0){
-            setCount(count-1)
+  const handleDec = () => {
+    dispatch()
+  }
 
-        }
-      }
   return (
     <View>
       <Text>Counterf</Text>
-      <TouchableOpacity onPress={handleEnc}>
-      <Text>+</Text>
+      {/* 1 */}
+      <TouchableOpacity onPress={handleInc}>    
+        <Text>+</Text>
       </TouchableOpacity>
       <Text>{count}</Text>
       <TouchableOpacity onPress={handleDec}>
-      <Text>-</Text>
+        <Text>-</Text>
       </TouchableOpacity>
     </View>
   )
