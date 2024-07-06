@@ -22,20 +22,23 @@ import Linking1 from './app/Container/Button/Linking1';
 import PixelRatio1 from './app/Container/Button/PixelRatio1';
 import Netinfo1 from './app/Container/Button/Netinfo1';
 import Counterf from './app/Container/Counterclass/Counterf';
+import { Provider } from 'react-redux';
+import { configureStore } from './app/redux/store';
 
 
 
 export default function App() {
+  const store = configureStore();
   return (
-
-    //   <NavigationContainer >
-    //   {/* <ProductStack/> */}
-    //  {/* <HomeStack/> */}
-    //  {/* <DrawerNavigator/> */}
-    //  <BottomTabs/>
-    //   </NavigationContainer>
-    // <Netinfo1 />
-    <Counterf />
-
+    <Provider store={store}>
+      {/* <NavigationContainer >
+       <ProductStack/> 
+     <HomeStack/> 
+      <DrawerNavigator/> 
+      <BottomTabs/>
+       </NavigationContainer>
+     <Netinfo1 /> */}
+      <Counterf />
+    </Provider>
   )
 }
